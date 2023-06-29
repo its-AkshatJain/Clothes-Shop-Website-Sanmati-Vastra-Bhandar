@@ -1,0 +1,294 @@
+/* Note :- I have not arranged these tags and classes in Alphabetical order.
+        I have arranged them according to there sequence in web page. */
+
+body{
+  font-family: 'Poppins', sans-serif;
+  font-weight:400;
+  color:#8f8f8f;
+}
+
+/* Top Container */
+.top-container{
+    padding:1rem 4rem;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;    
+}
+
+.gradient-background {
+    background: linear-gradient(300deg, white, brown,darkblue, orange);
+    background-size: 180% 180%;
+    animation: gradient-animation 10s ease infinite;
+  }
+  
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+.top{
+  text-align: center;
+  color:white;
+}
+
+.big-heading{
+    font-family: 'Geologica', sans-serif;
+    font-weight:900;
+    font-size:3rem;
+    margin:2rem 0 1rem 0;
+}
+
+.small-text{
+  font-family: 'Poppins', sans-serif;
+  font-size:1.5rem;
+}
+
+.title-image{
+  margin-bottom:2%;
+  height:450px;
+
+  /* You can make round corners of your title image using */
+  /* border-radius: 15px; */
+}
+
+.small-heading{
+  font-family: 'Geologica', sans-serif;
+  font-weight:700;
+  padding:1.5rem 0 0.5rem 0;
+  color:#000;
+}
+
+/* BestSeller */
+.card{
+  padding:1rem;
+  margin: 1rem 0.5rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight:400;
+}
+
+.card-title{
+  text-decoration:solid;
+  font-size:1.5rem;
+}
+
+.align-button{
+  margin-bottom:1rem;
+  position:absolute;
+  bottom:0;
+}
+
+/* Offers */
+.offer-structure{
+  display: flex;
+  justify-content:center;
+}
+
+.offer-container{
+  display: grid;
+  grid-template-rows:10rem 10rem 10rem;
+  grid-template-columns:20rem 10rem 10rem;
+  gap:0.5rem;
+  padding:2rem 0;;
+}
+
+.offer-box{
+  /* border:2px solid red;          for adding border*/
+  border-radius: 15px;
+  padding:2rem;
+  color:white;
+  font-family: 'Geologica', sans-serif;
+  font-weight:900;
+}
+
+.sixty-seventy{
+  grid-area:1/1/3/3;
+  background-color:#FF0000;
+  font-size: 5rem;
+}
+
+.ten{
+ background-color:lightseagreen;
+ font-size: 2rem;
+}
+
+.fifty{
+  grid-row:span 2;
+  background-color:purple;
+  font-size: 3rem;
+}
+
+.thirty-fourty{
+ background-color:#8B8000;
+ font-size: 2.5rem;
+}
+.five{
+ background-color: orange;
+ font-size: 1.5rem;
+}
+
+.sixty-seventy:hover{
+  background-color:#FF4C4C;
+}
+
+.ten:hover{
+  background-color:#71e5df;
+}
+
+.fifty:hover{
+  background-color:#DE73FF;
+}
+
+.thirty-fourty:hover{
+  background-color:#C3BC05;
+}
+.five:hover{
+  background-color:#FFD580;
+}
+
+/* Footer or Contact */
+#Contact{
+  margin:0;
+  padding:4rem;
+  text-align:center;
+  color:#fff;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+#Contact hr{
+  margin:auto;
+  border-style: none;
+  border-top-style:dashed;
+  width:45%; 
+  border-width:5px;
+}
+
+.footer-link{
+  text-decoration: none;
+  margin:1.2rem;
+  margin-bottom:20px;
+  font-family: 'Poppins', sans-serif;
+  font-weight:400;
+  color:#fff;
+  text-align: center;
+}
+
+.copyright{
+  color:white;
+  margin:2rem;
+}
+
+.footer-link:hover{
+  color:#8f8f8f;
+}
+
+/* About Page */
+.about-picture{
+  margin:3% 0%;
+  width:40%;
+  border-radius: 10px;
+  border:solid black 1px;
+}
+
+.image-align{
+  display:flex;
+  justify-content: center;
+}
+
+.top-space{
+  margin:3% 0% 2% 0%;
+}
+
+.tribute{
+  margin-bottom:3%;
+}
+
+/* To make code easy to understand I have used 3 media query of different dimensions */
+
+/* Media Query for offer and Top Container*/
+@media screen and (max-width:1050px) {
+  .title-image{
+    height:fit-content;
+  }
+  .offer-container{
+    display: grid;
+    grid-template-rows:8rem 8rem 8rem;
+    grid-template-columns:16rem 8rem 8rem;
+    gap:0.8rem;
+  }
+
+  .sixty-seventy{
+    font-size: 3.5rem;
+  }
+  
+  .ten{
+   font-size: 1.5rem;
+  }
+  
+  .fifty{
+    font-size: 2rem;
+  }
+  
+  .thirty-fourty{
+   font-size: 2rem;
+  }
+  .five{
+   font-size: 1rem;
+  }
+  
+}
+
+/* Media Query for offer */
+@media screen and (max-width:550px) {
+
+  .offer-container{
+    display: grid;
+    grid-template-rows:4rem 4rem 4rem;
+    grid-template-columns:8rem 4rem 4rem;
+    gap:0.4rem;
+  }
+
+  .offer-box{
+    padding:0.6rem;
+  }
+
+  .sixty-seventy{
+    font-size: 2rem;
+  }
+  
+  .ten{
+   font-size: 0.8rem;
+  }
+  
+  .fifty{
+    font-size: 1rem;
+  }
+  
+  .thirty-fourty{
+   font-size: 1.2rem;
+  }
+
+  .five{
+   font-size: 0.8rem;
+  }
+
+  .offer-image{
+    display:none;
+  }
+  
+}
+
+/* Media Query for offer */
+@media screen and (max-width:624px) 
+{
+  .footer-link{
+    display: block;
+  }
+}
+
